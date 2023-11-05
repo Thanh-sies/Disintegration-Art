@@ -3,7 +3,7 @@ A C++ module that allows you to manipulate art pieces. This module uses wxWidget
 
 This module allows you to select images in the photos directory. The code automatically pulls up photos, at a maximum of 4, so you may have to move some files around in the case that the files you want are listed in the 5th or later position.
 
-This application allows you to select from 1 to 10 disintegration points, which are used as an origin point to disintegrate it and points around it. Under the threshold of ignoring the pixel intensity values in the form of (RGB), the algorithm will either advance the spread of disintegration or stop there. Any pixel values found under the threshold value will be ignored, and that point of expansion will discontinue.
+This application allows you to select from 1 to 10 disintegration points, which are used as an origin point to disintegrate it and points around it. Under the threshold of ignoring the pixel intensity values in the form of (RGB), the algorithm will either advance the spread of disintegration or stop there. Any pixel values found under the threshold value will be ignored and that point of expansion will discontinue.
 
 <img width="1189" alt="Screenshot 2023-11-05 at 2 02 38 AM" src="https://github.com/Thanh-sies/Disintegration-Art/assets/7445307/ff02d26d-bbea-4625-8225-8f14a198196f">
 
