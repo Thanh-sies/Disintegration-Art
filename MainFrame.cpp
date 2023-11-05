@@ -10,7 +10,6 @@
 #include <opencv4/opencv2/highgui/highgui.hpp>
 
 #include <boost/functional/hash.hpp>
-#include <SFML/Graphics.hpp>
 #include <wx/rawbmp.h>
 #include <wx/spinctrl.h>
 #include <wx/window.h>
