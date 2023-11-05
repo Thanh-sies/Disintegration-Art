@@ -7,7 +7,7 @@ This application allows you to select from 1 to 10 disintegration points, which 
 
 <img width="1189" alt="Screenshot 2023-11-05 at 2 02 38 AM" src="https://github.com/Thanh-sies/Disintegration-Art/assets/7445307/ff02d26d-bbea-4625-8225-8f14a198196f">
 
-After you input the parameters, you can then click on one of the photos that you choose to run the disintegration on. You will then click on the spots on the photo for where you would like the origin of disintegration to spawn. The text below the photo will keep track of where you have placed the points. Once you have selected the required number of points, which you set in the page prior, a new window will spawn showing the disintegration animation. Additionally, when the disintegration terminates, you can find the information for the amount of iterations were needed for the disintegration to terminate.
+After you input the parameters, you can then click on one of the photos that you choose to run the disintegration on. You will then click on the spots on the photo for where you would like the origin of disintegration to spawn. The text below the photo will keep track of where you have placed the points. Once you have selected the required number of points, which you set in the previous page, a new window will spawn showing the disintegration animation. Additionally, when the disintegration terminates, you can find the information for the amount of iterations needed for the process to terminate.
 
 ![Screenshot 2023-11-05 at 2 06 14 AM](https://github.com/Thanh-sies/Disintegration-Art/assets/7445307/2cbc2422-e13e-4a1e-a6e5-ad7ba4d83119)
 
