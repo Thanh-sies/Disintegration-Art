@@ -8,7 +8,6 @@
 #include <opencv4/opencv2/core.hpp>
 #include <opencv4/opencv2/imgproc/imgproc.hpp>
 #include <opencv4/opencv2/highgui/highgui.hpp>
-
 #include <boost/functional/hash.hpp>
 #include <wx/rawbmp.h>
 #include <wx/spinctrl.h>
@@ -31,18 +30,18 @@ void MainFrame::SetUpFrame()
   this->image_meta = ImageMetaInfo();
 
   this->start_game = new wxPanel(this);
-  wxStaticText *disintegration_points_text = new wxStaticText(this->start_game, wxID_ANY, "Disintegration Points - Range : [1,10]", wxPoint(50, 675));
-  this->disintegration_points = new wxSpinCtrl(this->start_game, wxID_ANY, "", wxPoint(280, 675));
+  wxStaticText *disintegration_points_text = new wxStaticText(this->start_game, wxID_ANY, "Disintegration Points - Range : [1,10]", wxPoint(50, wx_HEIGHT-25));
+  this->disintegration_points = new wxSpinCtrl(this->start_game, wxID_ANY, "", wxPoint(280, wx_HEIGHT-25));
   this->disintegration_points->SetRange(1, 10);
-  wxStaticText *threshold_text = new wxStaticText(this->start_game, wxID_ANY, "Threshold For Ignoring Intensity Values Under - Range : [0,255]", wxPoint(50, 625));
-  this->threshold_intensity = new wxSpinCtrl(this->start_game, wxID_ANY, "", wxPoint(435, 625));
+  wxStaticText *threshold_text = new wxStaticText(this->start_game, wxID_ANY, "Threshold For Ignoring Intensity Values Under - Range : [0,255]", wxPoint(50, wx_HEIGHT-75));
+  this->threshold_intensity = new wxSpinCtrl(this->start_game, wxID_ANY, "", wxPoint(435, wx_HEIGHT-75));
   this->threshold_intensity->SetRange(0, 255);
   
   sizer->Add(this->start_game, 1, wxGROW);
 
   this->in_game_view = new wxPanel(this);
-  this->points_selected = new wxStaticText(this->in_game_view, wxID_ANY, this->points_selection, wxPoint(25, 675));
-  wxButton *restart_btn = new wxButton(this->in_game_view, wxID_ANY, "Restart", wxPoint(1100, 675));
+  this->points_selected = new wxStaticText(this->in_game_view, wxID_ANY, this->points_selection, wxPoint(25, wx_HEIGHT-25));
+  wxButton *restart_btn = new wxButton(this->in_game_view, wxID_ANY, "Restart", wxPoint(wx_WIDTH-100, wx_HEIGHT-25));
   restart_btn->Bind(wxEVT_BUTTON, &MainFrame::Restart, this);
   sizer->Add(this->in_game_view, 2, wxGROW);
   CreateStatusBar();
